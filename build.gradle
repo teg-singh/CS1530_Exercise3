@@ -1,4 +1,7 @@
 apply plugin: 'java'
+apply plugin: 'application'
+mainClassName = "exercise_3.Sequencer"
+
 repositories {
   mavenCentral()
 }
@@ -10,4 +13,9 @@ dependencies {
 task sequencehelp << {
   println "Integer Sequence Project"
   println "Given an integer n as an argument. displays Tri(n) and LC(n)"
+}
+
+run {
+	systemProperties System.getProperties()
+	args System.getProperty("args").split()
 }
