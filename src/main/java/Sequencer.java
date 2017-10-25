@@ -21,7 +21,16 @@ public class Sequencer {
 	}
 
 	public static int triangle(int val) {
+<<<<<<< HEAD
 		return val * (val + 1) / 2;
+=======
+		if (val = 0) {
+			return 0;
+		}
+		else {
+			return val + triangle(val - 1);
+		}
+>>>>>>> 7815d9c076eab7a25d780433f2e8605cda287404
 	}
 
 	public static int lazyCaterer(int val) {
